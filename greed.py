@@ -1,11 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 11 13:36:58 2021
 
-@author: yurynikulin
-"""
-
+# new string
 # жадные алгоритмы
 
 states_needed = set(['mt', 'wa', 'or', 'id', 'nv', 'ut', 'az']) # множество - список всех значений(штатов)
