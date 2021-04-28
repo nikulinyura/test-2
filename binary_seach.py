@@ -1,3 +1,5 @@
+# бинарный поиск алгоритм
+
 def binary(lst, item):
     low = 0
     high = len(lst)-1
