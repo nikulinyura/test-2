@@ -1,10 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 12 14:29:27 2021
+# add comments
+# make as function
 
-@author: yurynikulin
-"""
 skills  = set(['rain', 'defence', 'attack', 'stress', 'lead'])
 
 players = {}

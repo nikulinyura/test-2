@@ -1,4 +1,5 @@
 # бинарный поиск алгоритм
+# add comments
 
 def binary(lst, item):
     low = 0

@@ -1,3 +1,6 @@
+# add comments
+
+
 def find_smaller(arr): # поиск индекса наименьшего значения
     smallest = arr[0]
     smallest_index = 0
