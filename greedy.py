@@ -30,3 +30,4 @@ while states_needed: # пока список значение (штатов) Н�
 print(final_stations)
  
         
+import requests
