@@ -1,7 +1,7 @@
 
 # new string
 # жадные алгоритмы
-# very greedy
+# very greedyvery greedyvery greedyvery greedyvery greedyvery greedyvery greedyvery greedyvery greedyvery greedy
 
 states_needed = set(['mt', 'wa', 'or', 'id', 'nv', 'ut', 'az']) # множество - список всех значений(штатов)
 stations = {} # создать хэш  ключ - станция, значение - множество из штатов покрытия
