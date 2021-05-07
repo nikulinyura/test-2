@@ -1,4 +1,5 @@
 # add dicriptions!
+# make as function
 
 import math
 math.inf 
