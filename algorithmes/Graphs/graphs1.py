@@ -1,6 +1,6 @@
 # graphs computation
 
-class Node:
+class Node:             # узел
 
     def __init__(self, name):
         self.name = name
@@ -12,7 +12,7 @@ class Node:
         return self.name
 
 
-class Edge:
+class Edge:                     #ребро
 
     def __init__(self, src, dest):
     # Assumes src and dest are nodes"""
