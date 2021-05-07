@@ -2,7 +2,7 @@
 # divide and conquer strategy
 
 
-def qsort(arr):                                             # quil sor function.  input list. output sorted list
+def qsort(arr):                                             # quik sort function.  input list. output sorted list
 
     if len(arr) < 2:                                        # if list contains 1 item
         
