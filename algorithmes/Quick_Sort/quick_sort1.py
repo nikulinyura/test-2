@@ -1,6 +1,8 @@
 # Quik Sort algorithm 1
 # divide and conquer strategy
 
+### ghhgih
+
 
 def qsort(arr):                                             # quik sort function.  input list. output sorted list
 
