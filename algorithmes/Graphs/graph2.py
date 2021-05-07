@@ -1,3 +1,8 @@
+# how many steps
+
+# add comments
+
+
 g = {}
 g['cab'] = ['car', 'cat']
 g['car'] = ['cat', 'bar']
@@ -8,8 +13,12 @@ g['mat'] = ['bat']
 def sp(dic, s, f):
     from collections import deque
     sq = deque()
-    sq += dic[s]
-    p=1
+    try: 
+        sq += dic[s]
+        p=1
+    except KeyError:
+        print('hasnt friends')
+        
 
     while sq:
         i = sq.popleft()
@@ -23,7 +32,8 @@ def sp(dic, s, f):
                 except KeyboardInterrupt:
                     print('no') 
                     break
+                
 
 
 #test
-print(sp(g, 'mat', 'bat'))
+print(sp(g, 'bat', 'car'))
