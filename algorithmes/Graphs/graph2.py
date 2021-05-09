@@ -1,39 +1,37 @@
-# how many steps
+# how many steps to s
 
 # add comments
 
+import pandas as pd
+import matplotlib.pyplot as plt
 
 g = {}
 g['cab'] = ['car', 'cat']
 g['car'] = ['cat', 'bar']
-g['cat'] = ['mat', 'bat']
+g['cat'] = ['mat']
 g['bar'] = ['bat']
 g['mat'] = ['bat']
-
-def sp(dic, s, f):
-    from collections import deque
+from collections import deque
+def steps(dic, s):
     sq = deque()
-    try: 
-        sq += dic[s]
-        p=1
-    except KeyError:
-        print('hasnt friends')
-        
-
+    st=deque()
+    sq+=dic[s]
+    sed = []
+    tab={}
+    n=1
     while sq:
         i = sq.popleft()
-        if i == f:
-            return s, 'to', f, 'is', p, 'step'
-            
-        else:
+        if i not in sed:
+            sed.append(i)
+            tab[i]=n
+            try: 
+                st+=dic[i]
+            except KeyError:
+                pass
             if not sq:
-                p+=1
-                try: sq +=dic[i]
-                except KeyboardInterrupt:
-                    print('no') 
-                    break
-                
-
-
-#test
-print(sp(g, 'bat', 'car'))
+                n+=1
+                sq += st
+                st = deque()
+            
+    return tab        
+print(pd.Series(steps(g, 'cab')))
