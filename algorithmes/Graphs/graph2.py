@@ -33,5 +33,10 @@ def steps(dic, s):
                 sq += st
                 st = deque()
             
-    return tab        
+    return tab   
+
+a =  steps(g, 'cab')
+A =  pd.Series(steps(g, 'cab'))
 print(pd.Series(steps(g, 'cab')))
+A.plot()
+plt.show()
