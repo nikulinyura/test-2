@@ -4,14 +4,14 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-
+from collections import deque
 g = {}
 g['cab'] = ['car', 'cat']
 g['car'] = ['cat', 'bar']
 g['cat'] = ['mat']
 g['bar'] = ['bat']
 g['mat'] = ['bat']
-from collections import deque
+
 def steps(dic, s):
     sq = deque()
     st=deque()
