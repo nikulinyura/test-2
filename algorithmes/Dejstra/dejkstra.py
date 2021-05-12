@@ -30,9 +30,9 @@ g['fin'] = {}
 
 # cost hesh-tab
 costs = {} # ключ цель, значение стоимость. стоимость от старта до соседа
-costs['a'] = 6
-costs['b'] = 2
-costs['fin'] = infinity
+costs['a'] = g['start']['a']
+costs['b'] = g['start']['b']
+costs['fin'] = infinity                 # ???????
 
 
 #perents hesh-tab
@@ -79,16 +79,19 @@ while node:
      processed.append(node) # node добавляем в список обработанных
      node = flc(costs) #
 
-i = 'fin'
-while i != 'start':
-    
-    j = pars[i]
-    path.append(j)
-    i = pars[i]    
+def result(s,f):
+    i = f
+    while i != s:
+        j = pars[i]
+        path.append(j)
+        i = pars[i]
+    return path[::-1]
+
+
+for i in result('start', 'fin'):
+    print(i, end = " -> ")
+
 print(costs['fin'])
-
-print (path[:])
-
 
 
 
